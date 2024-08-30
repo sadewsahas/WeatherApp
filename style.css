@@ -113,3 +113,75 @@ body::before{
 .weather-summary-info{
     text-align: end;
 }
+
+.weather-conditions-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.condition-info{
+    align-items: center;
+    gap: 6px;
+}
+
+.condition-item span{
+    font-size: 30px;
+}
+
+.forecast-items-container{
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    padding-bottom: 12px;
+}
+
+.forecast-items-container::-webkit-scrollbar{
+    height: 8px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.135);
+    border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.135);
+    border-radius: 99px;
+}
+
+
+.forecast-item{
+    min-width: 70px;
+    background: rgba(0, 0, 0, 0.135);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s background;
+}
+
+.forecast-item:hover{
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.forecast-item-img{
+    width: 35px;
+    height: 35px;
+}
+
+.section-message img{
+    height: 180px;
+    width: fit-content;
+}
+
+.section-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 25%;
+}
